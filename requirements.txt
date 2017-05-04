@@ -6,3 +6,5 @@ Pillow==2.9.0
 pytz==2017.2
 requests==2.13.0
 six==1.10.0
+dj-database-url==0.2.1
+
