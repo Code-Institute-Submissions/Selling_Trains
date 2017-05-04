@@ -1,1 +1,1 @@
-web: gunicorn project.wsgi:application
+web: gunicorn Selling_Trains.wsgi:application

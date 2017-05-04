@@ -25,7 +25,7 @@ SECRET_KEY = '8u3^gro8gr97y6tj1ozh9r%+eupr%&p%&3@ziv1#v0xi+dlyy9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['selling-trains.herokuapp.com','127.0.0.1']
 
 
 # Application definition
