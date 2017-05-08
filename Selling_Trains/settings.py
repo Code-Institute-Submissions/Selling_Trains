@@ -91,6 +91,8 @@ DATABASES = {
     }
 }
 
+# DATABASES['default'] = dj_database_url.config("mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b?")
+
 # DATABASES = {
 #     'default': {
 #
