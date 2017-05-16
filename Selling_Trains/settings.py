@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-# import dj_database_url
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -93,9 +93,10 @@ DATABASES = {
 
 # DATABASES['default'] = dj_database_url.config("mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b?")
 
+
+
 # DATABASES = {
 #     'default': {
-#
 #     }
 # }
 #
@@ -103,6 +104,8 @@ DATABASES = {
 #
 # DATABASES['default'] = dj_database_url.parse(CLEAR_DB_URL)
 
+# CLEARDB_DATABASE_URL = "mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b"
+# DATABASES['default'] = dj_database_url.parse(CLEARDB_DATABASE_URL)
 
 
 

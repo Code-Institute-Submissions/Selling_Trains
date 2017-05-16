@@ -14,6 +14,7 @@ class AccountUserManager(UserManager):
         """
        Creates and saves a User with the given username, email and password.
        """
+
         now = timezone.now()
         if not email:
             raise ValueError('The given username must be set')
@@ -27,6 +28,8 @@ class AccountUserManager(UserManager):
         user.save(using=self._db)
 
         return user
+
+
 
 
 class User(AbstractUser):

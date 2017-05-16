@@ -12,6 +12,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='products-sale', blank=True, null=True)
 
+
+
     @property
     def paypal_form(self):
         paypal_dict = {
