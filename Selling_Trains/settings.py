@@ -84,31 +84,15 @@ WSGI_APPLICATION = 'Selling_Trains.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-# DATABASES['default'] = dj_database_url.config("mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b?")
-
-
-
 # DATABASES = {
 #     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
-#
-# CLEAR_DB_URL = os.environ.get("CLEARDB_DATABASE_URL", "")
-#
-# DATABASES['default'] = dj_database_url.parse(CLEAR_DB_URL)
 
-# CLEARDB_DATABASE_URL = "mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b"
-# DATABASES['default'] = dj_database_url.parse(CLEARDB_DATABASE_URL)
-
-
-
+CLEARDB_DATABASE_URL = "mysql://b9f1c98634d653:597b5553@eu-cdbr-west-01.cleardb.com/heroku_a1b9a57dadf3e8b"
+DATABASES['default'] = dj_database_url.parse(CLEARDB_DATABASE_URL)
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
